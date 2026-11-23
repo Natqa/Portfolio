@@ -873,37 +873,3 @@ a.contact__link:hover svg { transform: translate(2px, -2px); }
 @media (max-width: 900px) {
   .cs-screens--3, .cs-screens--4 { justify-content: start; grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: minmax(170px, 60%); }
 }
-
-/* ===== Dark theme (case-sales.html: <body class="theme-dark">) — inverts the light palette ===== */
-.theme-dark {
-  --bg: #0d141b;
-  --surface: #1b2530;
-  --surface-2: #131c25;
-  --ink: #eef2f6;
-  --muted: #a5b1be;     /* 7.4:1 on --surface-2 */
-  --line: #2a3643;
-  --border: #2a3643;
-  --navy: #2c4b67;
-  --navy-2: #35587a;
-  --on-navy: #e8eef4;
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, .4);
-  color-scheme: dark;
-}
-/* things that used --ink as a background with white text: now light background, dark text */
-.theme-dark .nav__cta, .theme-dark .btn--dark, .theme-dark .next__arrow,
-.theme-dark .icon-btn:hover, .theme-dark .icon-btn::after { color: var(--bg); }
-.theme-dark .nav { background: rgba(19, 28, 37, .82); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .06), 0 8px 28px -10px rgba(0, 0, 0, .6); }
-.theme-dark .nav__link:hover, .theme-dark .nav__link.is-current { background: rgba(255, 255, 255, .08); }
-.theme-dark .nav.is-wide .nav__cta { background: var(--ink); color: var(--bg); }
-.theme-dark .next:hover { background: var(--surface); }
-.theme-dark .cs-band { background: var(--surface-2); }
-.theme-dark .cs-band__label, .theme-dark .cs-band__title em { color: #9fb6cc; }
-.theme-dark .cs-band__pills li { background: var(--surface); border-color: var(--border); }
-.theme-dark .cs-media--map { background: var(--surface); }
-.theme-dark .cs-cases-section { background: #2f4155; }
-.theme-dark .cs-steps i { color: #2f4155; }
-.theme-dark .cs-cases-section .cs-case { background: var(--surface-2); }
-.theme-dark .cs-screens { background: #2a3846; }
-.theme-dark .cs-tag--ok, .theme-dark .cs-flow--after { background: var(--navy); }
-.theme-dark .deck .section { box-shadow: 0 24px 40px -28px rgba(0, 0, 0, .8); }
-.theme-dark .cs-pain__phone img, .theme-dark .cs-screens img { box-shadow: 0 20px 50px -18px rgba(0, 0, 0, .7); }
